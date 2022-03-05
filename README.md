@@ -12,3 +12,8 @@ If you do not know the rules of Yahtzee, a helpful resource has been linked <a h
   <li>JavaScript</li>
   <li>jQuery</li>
  </ul>
+
+<h2>Notes</h2>
+- Please hold all dice before submitting a score.
+- Known "Issue": Doesn't really effect gameplay but after you submit all of your options, you technically get one more turn. However, you can't really submit anything so it's better to just Reset the Game beforehand if you would like to play again. 
+- I did not include the feature of getting an 100 point bonus for each extra Yahtzee after the first one was submitted. 
