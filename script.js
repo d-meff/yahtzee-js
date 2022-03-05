@@ -1,4 +1,4 @@
-alert("Welcome to Yahtzee! \n\nPlease only click one 'Submit' Button per turn (left side of the screen)\n\nPlease make sure that all dice are held before you submit an option for a round, if you roll three times all dice will be held automatically.");
+alert("Welcome to Yahtzee!\n\nPlease make sure that all dice are held before you submit an option for a round, if you roll three times all dice will be held automatically.");
 
 // Totals
 var game_total = 0;
@@ -95,6 +95,8 @@ unhold_all_dice.disabled = true;
 
 add_subtotal_button.disabled = true;
 reset_rolls_button.disabled = true;
+
+var subtotal_used = false;
 
 // test
 hold_dice_1.disabled = true;
@@ -538,7 +540,7 @@ $(submit_ones).click(function() {
     held_dice = [0,0,0,0,0];
     reset_rolls_button.disabled = false;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -591,7 +593,7 @@ $(submit_twos).click(function() {
 
     button_used[1] = 1;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -642,7 +644,7 @@ $(submit_threes).click(function() {
 
     button_used[2] = 1;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -693,7 +695,7 @@ $(submit_fours).click(function() {
 
     button_used[3] = 1;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -744,7 +746,7 @@ $(submit_fives).click(function() {
 
     button_used[4] = 1;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -795,7 +797,7 @@ $(submit_sixes).click(function() {
 
     button_used[5] = 1;
 
-    if (subtotal_total >= 63) {
+    if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
     }
     else {
@@ -1241,6 +1243,7 @@ $(add_subtotal_button).click(function() {
     }
     total_score_value.innerText = 'TOTAL SCORE: ' + game_total;
     add_subtotal_button.disabled = true;
+    subtotal_used = true;
 })
 
 $(hold_all_dice).click(function() {
@@ -1336,4 +1339,5 @@ $(reset_game_button).click(function() {
     total_subtotal_value.innerText = 'Subtotal: ' + subtotal_total;
 
     button_used = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    subtotal_used = false;
 })
