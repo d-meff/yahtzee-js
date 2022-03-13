@@ -1,5 +1,3 @@
-alert("Welcome to Yahtzee!\n\nPlease make sure that all dice are held before you submit an option for a round, if you roll three times all dice will be held automatically.");
-
 // Totals
 var game_total = 0;
 
@@ -524,6 +522,7 @@ $(hold_dice_5).click(function() {
 // Logic for submitting scores for numbers 1-6
 
 $(submit_ones).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 1) {
             ones_total += 1;
@@ -575,6 +574,7 @@ $(submit_ones).click(function() {
 });
 
 $(submit_twos).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 2) {
             twos_total += 2;
@@ -626,6 +626,7 @@ $(submit_twos).click(function() {
 });
 
 $(submit_threes).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 3) {
             threes_total += 3;
@@ -677,6 +678,7 @@ $(submit_threes).click(function() {
 });
 
 $(submit_fours).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 4) {
             fours_total += 4;
@@ -728,6 +730,7 @@ $(submit_fours).click(function() {
 });
 
 $(submit_fives).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 5) {
             fives_total += 5;
@@ -779,6 +782,7 @@ $(submit_fives).click(function() {
 });
 
 $(submit_sixes).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         if (held_dice[i] == 6) {
             sixes_total += 6;
@@ -832,6 +836,7 @@ $(submit_sixes).click(function() {
 // Logic for other submit functions 
 
 $(submit_chance).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     for (let i = 0; i < held_dice.length; i++) {
         chance_total += held_dice[i];
     }
@@ -871,6 +876,7 @@ $(submit_chance).click(function() {
 });
 
 $(submit_large_straight).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     var test_total1 = 0;
     var test_total2 = 0;
 
@@ -931,6 +937,7 @@ $(submit_large_straight).click(function() {
 });
 
 $(submit_three_of_a_kind).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     var remove_duplicates = [...new Set(held_dice)];
     var val_total_1 = 0;
     var val_total_2 = 0;
@@ -1000,6 +1007,7 @@ $(submit_three_of_a_kind).click(function() {
 });
 
 $(submit_four_of_a_kind).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     var remove_duplicates = [...new Set(held_dice)];
     var val_total_1 = 0;
     var val_total_2 = 0;
@@ -1070,6 +1078,7 @@ $(submit_four_of_a_kind).click(function() {
 
 
 $(submit_yahtzee).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     var remove_duplicates = [...new Set(held_dice)];
     check_total_yhtz = 0;
     
@@ -1178,6 +1187,7 @@ $(submit_small_straight).click(function() {
 });
 
 $(submit_full_house).click(function() {
+    held_dice = [parseInt(dice_value_1.innerText), parseInt(dice_value_2.innerText), parseInt(dice_value_3.innerText), parseInt(dice_value_4.innerText), parseInt(dice_value_5.innerText)];
     var remove_duplicates = [...new Set(held_dice)];
     var FHval_total_1 = 0;
     var FHval_total_2 = 0;
@@ -1315,7 +1325,6 @@ $(reset_game_button).click(function() {
 
     rolls_count = 0;
 
-        // test
     hold_dice_1.disabled = true;
     hold_dice_2.disabled = true;
     hold_dice_3.disabled = true;
