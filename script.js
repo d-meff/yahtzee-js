@@ -541,6 +541,7 @@ $(submit_ones).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
@@ -595,6 +596,7 @@ $(submit_twos).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
@@ -647,6 +649,7 @@ $(submit_threes).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
@@ -699,6 +702,7 @@ $(submit_fours).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
@@ -751,6 +755,7 @@ $(submit_fives).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
@@ -803,6 +808,7 @@ $(submit_sixes).click(function() {
 
     if (subtotal_total >= 63 && subtotal_used == false) {
         add_subtotal_button.disabled = false;
+        alert("Subtotal Bonus is now available! \n\nClick the 'Add Subtotal Bonus' to apply the points.");
     }
     else {
         add_subtotal_button.disabled = true;
