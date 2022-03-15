@@ -568,7 +568,13 @@ $(submit_ones).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_twos).click(function() {
@@ -621,7 +627,13 @@ $(submit_twos).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_threes).click(function() {
@@ -674,7 +686,13 @@ $(submit_threes).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_fours).click(function() {
@@ -727,7 +745,13 @@ $(submit_fours).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_fives).click(function() {
@@ -780,7 +804,13 @@ $(submit_fives).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_sixes).click(function() {
@@ -833,7 +863,13 @@ $(submit_sixes).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+ 
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 // Logic for other submit functions 
@@ -875,7 +911,13 @@ $(submit_chance).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_large_straight).click(function() {
@@ -937,6 +979,12 @@ $(submit_large_straight).click(function() {
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
     submit_yahtzee.disabled = true; 
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_three_of_a_kind).click(function() {
@@ -1007,6 +1055,12 @@ $(submit_three_of_a_kind).click(function() {
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
     submit_yahtzee.disabled = true; 
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_four_of_a_kind).click(function() {
@@ -1077,6 +1131,12 @@ $(submit_four_of_a_kind).click(function() {
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
     submit_yahtzee.disabled = true; 
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 
@@ -1135,6 +1195,12 @@ $(submit_yahtzee).click(function() {
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
     submit_yahtzee.disabled = true; 
+     
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_small_straight).click(function() {
@@ -1186,7 +1252,13 @@ $(submit_small_straight).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(submit_full_house).click(function() {
@@ -1247,7 +1319,13 @@ $(submit_full_house).click(function() {
     submit_full_house.disabled = true;
     submit_four_of_a_kind.disabled = true;
     submit_chance.disabled = true;
-    submit_yahtzee.disabled = true; 
+    submit_yahtzee.disabled = true;
+    
+    if (button_used.indexOf(0) == -1) {
+        alert("The game has now ended.\n\nPlease click the Reset Game Button to play again");
+        reset_rolls_button.disabled = true;
+        roll_dice_button.disabled = true;
+    }
 });
 
 $(add_subtotal_button).click(function() {
