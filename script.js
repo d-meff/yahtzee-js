@@ -107,100 +107,6 @@ hold_dice_5.disabled = true;
 // On-click Functions
 
 $(reset_rolls_button).click(function() {
-
-    // test - buttons
-    if (button_used[0] == 1) {
-        submit_ones.disabled = true;
-    }
-    else {
-        submit_ones.disabled = false;
-    }
-
-    if (button_used[1] == 1) {
-        submit_twos.disabled = true;
-    }
-    else {
-        submit_twos.disabled = false;
-    }
-
-    if (button_used[2] == 1) {
-        submit_threes.disabled = true;
-    }
-    else {
-        submit_threes.disabled = false;
-    }
-
-    if (button_used[3] == 1) {
-        submit_fours.disabled = true;
-    }
-    else {
-        submit_fours.disabled = false;
-    }
-
-    if (button_used[4] == 1) {
-        submit_fives.disabled = true;
-    }
-    else {
-        submit_fives.disabled = false;
-    }
-
-    if (button_used[5] == 1) {
-        submit_sixes.disabled = true;
-    }
-    else {
-        submit_sixes.disabled = false;
-    }
-
-    if (button_used[6] == 1) {
-        submit_three_of_a_kind.disabled = true;
-    }
-    else {
-        submit_three_of_a_kind.disabled = false;
-    }
-
-    if (button_used[7] == 1) {
-        submit_four_of_a_kind.disabled = true;
-    }
-    else {
-        submit_four_of_a_kind.disabled = false;
-    }
-
-    if (button_used[8] == 1) {
-        submit_small_straight.disabled = true;
-    }
-    else {
-        submit_small_straight.disabled = false;
-    }
-
-    if (button_used[9] == 1) {
-        submit_large_straight.disabled = true;
-    }
-    else {
-        submit_large_straight.disabled = false;
-    }
-
-    if (button_used[10] == 1) {
-        submit_full_house.disabled = true;
-    }
-    else {
-        submit_full_house.disabled = false;
-    }
-
-    if (button_used[11] == 1) {
-        submit_chance.disabled = true;
-    }
-    else {
-        submit_chance.disabled = false;
-    }
-
-    if (button_used[12] == 1) {
-        submit_yahtzee.disabled = true;
-    }
-    else {
-        submit_yahtzee.disabled = false;
-    }
-
-
     rolls_count = 0;
     roll_dice_button.disabled = false;
 
@@ -388,6 +294,97 @@ $(roll_dice_button).click(function() {
         unhold_all_dice.disabled = true;
 
         reset_rolls_button.disabled = true;
+    }
+    
+    if (button_used[0] == 1) {
+        submit_ones.disabled = true;
+    }
+    else {
+        submit_ones.disabled = false;
+    }
+
+    if (button_used[1] == 1) {
+        submit_twos.disabled = true;
+    }
+    else {
+        submit_twos.disabled = false;
+    }
+
+    if (button_used[2] == 1) {
+        submit_threes.disabled = true;
+    }
+    else {
+        submit_threes.disabled = false;
+    }
+
+    if (button_used[3] == 1) {
+        submit_fours.disabled = true;
+    }
+    else {
+        submit_fours.disabled = false;
+    }
+
+    if (button_used[4] == 1) {
+        submit_fives.disabled = true;
+    }
+    else {
+        submit_fives.disabled = false;
+    }
+
+    if (button_used[5] == 1) {
+        submit_sixes.disabled = true;
+    }
+    else {
+        submit_sixes.disabled = false;
+    }
+
+    if (button_used[6] == 1) {
+        submit_three_of_a_kind.disabled = true;
+    }
+    else {
+        submit_three_of_a_kind.disabled = false;
+    }
+
+    if (button_used[7] == 1) {
+        submit_four_of_a_kind.disabled = true;
+    }
+    else {
+        submit_four_of_a_kind.disabled = false;
+    }
+
+    if (button_used[8] == 1) {
+        submit_small_straight.disabled = true;
+    }
+    else {
+        submit_small_straight.disabled = false;
+    }
+
+    if (button_used[9] == 1) {
+        submit_large_straight.disabled = true;
+    }
+    else {
+        submit_large_straight.disabled = false;
+    }
+
+    if (button_used[10] == 1) {
+        submit_full_house.disabled = true;
+    }
+    else {
+        submit_full_house.disabled = false;
+    }
+
+    if (button_used[11] == 1) {
+        submit_chance.disabled = true;
+    }
+    else {
+        submit_chance.disabled = false;
+    }
+
+    if (button_used[12] == 1) {
+        submit_yahtzee.disabled = true;
+    }
+    else {
+        submit_yahtzee.disabled = false;
     }
 });
 
