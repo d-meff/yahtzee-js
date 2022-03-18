@@ -13,5 +13,5 @@ If you do not know the rules of Yahtzee, a helpful resource has been linked <a h
   <li>jQuery</li>
  </ul>
 
-<strong> Note </strong>
+<strong> Note: </strong>
 I did not invent the game of Yahtzee, all applicable licenses/name and image likenesses should be attributed to Hasbro Inc.
