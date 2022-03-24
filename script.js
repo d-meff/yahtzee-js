@@ -1369,19 +1369,20 @@ $(reset_game_button).click(function() {
     hold_dice_4.disabled = false;
     hold_dice_5.disabled = false;
 
-    submit_ones.disabled = false;
-    submit_twos.disabled = false;
-    submit_threes.disabled = false;
-    submit_fours.disabled = false;
-    submit_fives.disabled = false;
-    submit_sixes.disabled = false;
-    submit_small_straight.disabled = false;
-    submit_large_straight.disabled = false;
-    submit_three_of_a_kind.disabled = false;
-    submit_full_house.disabled = false;
-    submit_four_of_a_kind.disabled = false;
-    submit_chance.disabled = false;
-    submit_yahtzee.disabled = false; 
+    // changed
+    submit_ones.disabled = true;
+    submit_twos.disabled = true;
+    submit_threes.disabled = true;
+    submit_fours.disabled = true;
+    submit_fives.disabled = true;
+    submit_sixes.disabled = true;
+    submit_small_straight.disabled = true;
+    submit_large_straight.disabled = true;
+    submit_three_of_a_kind.disabled = true;
+    submit_full_house.disabled = true;
+    submit_four_of_a_kind.disabled = true;
+    submit_chance.disabled = true;
+    submit_yahtzee.disabled = true; 
     add_subtotal_button.disabled = true;
 
     hold_all_dice.disabled = true;
@@ -1431,3 +1432,19 @@ $(reset_game_button).click(function() {
     button_used = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     subtotal_used = false;
 })
+
+    // changed
+    submit_ones.disabled = true;
+    submit_twos.disabled = true;
+    submit_threes.disabled = true;
+    submit_fours.disabled = true;
+    submit_fives.disabled = true;
+    submit_sixes.disabled = true;
+    submit_small_straight.disabled = true;
+    submit_large_straight.disabled = true;
+    submit_three_of_a_kind.disabled = true;
+    submit_full_house.disabled = true;
+    submit_four_of_a_kind.disabled = true;
+    submit_chance.disabled = true;
+    submit_yahtzee.disabled = true; 
+    add_subtotal_button.disabled = true;
