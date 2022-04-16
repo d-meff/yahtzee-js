@@ -1,5 +1,5 @@
 # yahtzee-js
-Welcome to my Yahtzee Project! 
+Welcome to my Yahtzee Project! (Designed for Google Chrome)
 
 If you would like to play the game, here's the <a href="https://d-meff.github.io/yahtzee-js/">link</a>.
 
