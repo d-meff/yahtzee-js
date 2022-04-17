@@ -96,7 +96,8 @@ reset_rolls_button.disabled = true;
 
 var subtotal_used = false;
 
-// test
+// initializing hold state of dice
+
 hold_dice_1.disabled = true;
 hold_dice_2.disabled = true;
 hold_dice_3.disabled = true;
@@ -114,7 +115,6 @@ $(reset_rolls_button).click(function() {
     unhold_all_dice.disabled = true;
     reset_rolls_button.disabled = true;
 
-    // test w below button
     hold_dice_1.disabled = true;
     hold_dice_2.disabled = true;
     hold_dice_3.disabled = true;
@@ -128,7 +128,6 @@ $(roll_dice_button).click(function() {
 
     rolls_count += 1;
 
-        // test
     if (rolls_count == 1) {
         hold_dice_1.disabled = false;
         hold_dice_2.disabled = false;
@@ -555,7 +554,6 @@ $(submit_ones).click(function() {
 
     button_used[0] = 1;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -614,7 +612,6 @@ $(submit_twos).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -673,7 +670,6 @@ $(submit_threes).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -732,7 +728,6 @@ $(submit_fours).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -790,8 +785,7 @@ $(submit_fives).click(function() {
 
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
-
-    // test - button
+    
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -850,7 +844,6 @@ $(submit_sixes).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -898,7 +891,6 @@ $(submit_chance).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -965,7 +957,6 @@ $(submit_large_straight).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1041,7 +1032,6 @@ $(submit_three_of_a_kind).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1117,7 +1107,6 @@ $(submit_four_of_a_kind).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1181,7 +1170,6 @@ $(submit_yahtzee).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1239,7 +1227,6 @@ $(submit_small_straight).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1306,7 +1293,6 @@ $(submit_full_house).click(function() {
     unhold_all_dice.disabled = true;
     hold_all_dice.disabled = true;
 
-    // test - button
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
@@ -1433,7 +1419,6 @@ $(reset_game_button).click(function() {
     subtotal_used = false;
 })
 
-    // changed
     submit_ones.disabled = true;
     submit_twos.disabled = true;
     submit_threes.disabled = true;
